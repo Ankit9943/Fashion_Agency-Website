@@ -1,0 +1,677 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  width: 100%;
+  padding: 1.5rem 3rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  // ye fashionwerk wala h
+  .hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    // background-color: red;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .text {
+      display: flex;
+      justify-content: space-between;
+      font-family: monospace;
+      p {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .image-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    // background-color: green;
+
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      h1 {
+        font-size: 2.7em;
+        font-weight: 200;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+      p {
+        font-size: 1.4em;
+        font-weight: 200;
+        opacity: 0.8;
+        font-family: monospace;
+        line-height: 1.5;
+      }
+
+      .services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .service {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            font-size: 1.7em;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .vertical {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    // background-color: blue;
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .bottom {
+      display: flex;
+      gap: 1em;
+
+      p {
+        writing-mode: vertical-rl;
+        padding-top: 0.7em;
+      }
+      .text {
+        h1 {
+          font-size: 2em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        p {
+          writing-mode: initial;
+          line-height: 1.2em;
+          font-family: monospace;
+          font-size: 1.5em;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  #services {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-top: 2.5em;
+    // background-color: red;
+
+    .top {
+      h1 {
+        font-size: 2.7em;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1;
+        padding-bottom: 0.8em;
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 0.8em;
+        .head {
+          h3 {
+            font-size: 1.7em;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1;
+          }
+          p {
+            font-size: 1.5em;
+            font-weight: 200;
+            padding-top: 0.5em;
+            opacity: 0.8;
+            font-family: monospace;
+            line-height: 1.2;
+          }
+        }
+
+        .logo {
+          display: flex;
+          p {
+            padding-left: 1.2em;
+            font-size: 1.2em;
+            font-weight: 300;
+            font-family: monospace;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      aspect-ratio: 1/1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .work {
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    // background-color: pink;
+    h1 {
+      text-transform: uppercase;
+      font-size: 2.7em;
+      letter-spacing: 0.05em;
+      font-weight: 300;
+    }
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      .img {
+        width: 100%;
+        .image {
+          width: 100%;
+          aspect-ratio: 1/1;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .image1 {
+          width: 100%;
+          aspect-ratio: 1/1;
+          display: none;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7em;
+        .head {
+          h3 {
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: 400;
+          }
+          p {
+            font-family: monospace;
+            font-size: 1.5em;
+            opacity: 0.8;
+          }
+        }
+        .logo {
+          display: flex;
+          gap: 1em;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      .img {
+        width: 100%;
+        .image {
+          width: 100%;
+          aspect-ratio: 1/1;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .image1 {
+          width: 100%;
+          aspect-ratio: 1/1;
+          display: none;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7em;
+        .head {
+          h3 {
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: 400;
+          }
+          p {
+            font-family: monospace;
+            font-size: 1.5em;
+            opacity: 0.8;
+          }
+        }
+        .logo {
+          display: flex;
+          gap: 1em;
+        }
+      }
+    }
+  }
+  .clients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // background-color: aqua;
+    h1 {
+      font-size: 5.2em;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+    }
+    .content {
+      .loc {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        padding-bottom: 1.5em;
+        h3 {
+          font-size: 1.5em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        p {
+          font-weight: 300;
+          opacity: 0.8;
+          font-family: monospace;
+        }
+      }
+    }
+  }
+  .team {
+    // background-color: slateblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    .info {
+      // background-color: yellow;
+      h1 {
+        font-size: 2.7em;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.5em;
+        font-weight: 200;
+        opacity: 0.6;
+        font-family: monospace;
+      }
+    }
+    p {
+      font-size: 1.5em;
+      font-weight: 200;
+      opacity: 0.6;
+      font-family: monospace;
+    }
+    .part1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        // background-color: red;
+        h2 {
+          font-size: 1.7em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        .image {
+          width: 100%;
+          aspect-ratio: 1/1;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .about {
+          p {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .join {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    .all {
+      // background-color: blue;
+      width: 100%;
+      h2 {
+        font-weight: 400;
+        font-size: 1.5em;
+      }
+      p {
+        font-family: monospace;
+      }
+      .add {
+        display: flex;
+        gap: 0.5em;
+        p {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+.branding {
+  width: 100%;
+  padding-top: 3em;
+  background-color: #111111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1.2em;
+  h1 {
+    font-size: 4em;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+  }
+  button {
+    width: 40%;
+    border-radius: 1.5em;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+  }
+  hr {
+    color: white;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+    gap: 4em;
+    .image-text {
+      flex-direction: row-reverse;
+      // background-color: red;
+      gap: 4em;
+      .bottom {
+        width: 80%;
+        h1 {
+          font-size: 5em;
+          letter-spacing: 0.05em;
+        }
+        p {
+          font-size: 2em;
+        }
+        .services {
+          margin-top: auto;
+          .service {
+            p {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+    }
+
+    .vertical {
+      flex-direction: row;
+      gap: 4em;
+      .top {
+        width: 30%;
+      }
+      .bottom {
+        width: 70%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .text {
+          display: flex;
+          flex-direction: column;
+          h1 {
+            font-size: 4.7em;
+          }
+          p {
+            margin-top: auto;
+          }
+        }
+      }
+    }
+    #services {
+      flex-direction: row;
+      padding-top: 0;
+
+      .top {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        hr {
+          display: none;
+        }
+
+        h1 {
+          font-size: 6em;
+          width: 70%;
+        }
+
+        .service {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+        }
+
+        .first {
+          display: flex;
+          gap: 2em;
+          // background-color: red;
+        }
+        .second {
+          display: flex;
+          gap: 2em;
+          // background-color: green;
+        }
+      }
+      .bottom {
+        width: 50%;
+      }
+    }
+
+    .work {
+      gap: 2em;
+      h1 {
+        font-size: 10em;
+        font-weight: 400;
+        text-align: center;
+      }
+      .top {
+        flex-direction: row;
+        .img {
+          width: 60%;
+          display: flex;
+          gap: 2em;
+          .image1 {
+            display: block;
+          }
+        }
+
+        .row {
+          // background-color: blue;
+          width: 40%;
+          padding: 3em;
+          justify-content: space-between;
+          .head {
+            h3 {
+              font-size: 4em;
+            }
+            p {
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+      .bottom {
+        flex-direction: row;
+        .img {
+          width: 60%;
+          display: flex;
+          gap: 2em;
+          order: 2;
+          .image1 {
+            display: block;
+          }
+        }
+
+        .row {
+          width: 40%;
+          padding: 3em;
+          justify-content: space-between;
+          order: 1;
+          .head {
+            h3 {
+              font-size: 4em;
+            }
+            p {
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+    }
+    .clients {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .content {
+        width: 50%;
+      }
+      h1 {
+        text-align: end;
+      }
+    }
+    .team {
+      gap: 3em;
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          font-size: 4em;
+          // background-color: blue;
+        }
+        p {
+          width: 60%;
+        }
+      }
+      .part1 {
+        flex-direction: row;
+        gap: 3em;
+      }
+    }
+    .join {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1.5em;
+      .all {
+        width: 50%;
+        h2 {
+          font-size: 4em;
+          width: 70%;
+        }
+      }
+    }
+  }
+  .branding {
+    gap: 3em;
+    button {
+      width: 15%;
+      font-family: monospace;
+      font-size: 1.5em;
+      opacity: 0.8;
+    }
+    h1 {
+      font-size: 14em;
+      font-weight: 400;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 5em;
+      font-weight: 400;
+      letter-spacing: 1;
+    }
+  }
+}
