@@ -77,9 +77,9 @@ tl.from(".clients .content .loc", {
 });
 
 tl.from(".team .card", {
-  scale: 0.8,
+  scale: 0.7,
   opacity: 0,
-  duration: 0.5,
+  duration: 0.2,
   stagger: 0.3,
   ease: "power2.out",
 });
@@ -112,23 +112,6 @@ document.querySelectorAll(".service .row").forEach((row) => {
   });
   row.addEventListener("mouseleave", () => {
     gsap.to(row, {
-      scale: 1,
-      duration: 0.3,
-      ease: "power2.out",
-    });
-  });
-});
-
-document.querySelectorAll(".team .card").forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    gsap.to(card, {
-      scale: 1.05,
-      duration: 0.3,
-      ease: "power2.out",
-    });
-  });
-  card.addEventListener("mouseleave", () => {
-    gsap.to(card, {
       scale: 1,
       duration: 0.3,
       ease: "power2.out",

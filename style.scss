@@ -15,10 +15,50 @@ html {
 main {
   width: 100%;
   padding: 1.5rem 3rem;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+
+    .bar {
+      width: 8%;
+      color: grey;
+      margin: 0.5em 0em;
+      background-color: blue;
+    }
+  }
+
+  // .hide {
+  //   width: 100%;
+  //   background-color: black;
+  //   color: white;
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 2em;
+  //   padding: 2em;
+  //   font-family: monospace;
+  //   font-size: 1.2em;
+  //   font-weight: 400;
+  //   display: none;
+  //   ul {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     gap: 0.8em;
+  //     list-style-type: none;
+  //   }
+  //   button {
+  //     padding: 0.8em 0em;
+  //     width: 90%;
+  //     border-radius: 1.5em;
+  //   }
+  // }
 
   // ye fashionwerk wala h
   .hero-text {
@@ -26,7 +66,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    // background-color: red;
+    background-color: red;
 
     img {
       width: 100%;
@@ -46,7 +86,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    // background-color: green;
+    background-color: green;
 
     .top {
       width: 100%;
@@ -104,7 +144,7 @@ main {
     display: flex;
     gap: 1em;
     flex-direction: column;
-    // background-color: blue;
+    background-color: blue;
     .top {
       width: 100%;
       aspect-ratio: 1/1;
@@ -143,7 +183,7 @@ main {
     flex-direction: column;
     gap: 1.5em;
     padding-top: 2.5em;
-    // background-color: red;
+    background-color: red;
 
     .top {
       h1 {
@@ -203,7 +243,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.7em;
-    // background-color: pink;
+    background-color: pink;
     h1 {
       text-transform: uppercase;
       font-size: 2.7em;
@@ -315,7 +355,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    // background-color: aqua;
+    background-color: aqua;
     h1 {
       font-size: 5.2em;
       text-transform: uppercase;
@@ -342,7 +382,7 @@ main {
     }
   }
   .team {
-    // background-color: slateblue;
+    background-color: slateblue;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -406,7 +446,7 @@ main {
     flex-direction: column;
     gap: 1.2em;
     .all {
-      // background-color: blue;
+      background-color: blue;
       width: 100%;
       h2 {
         font-weight: 400;
@@ -436,11 +476,11 @@ main {
   justify-items: center;
   gap: 1.2em;
   h1 {
-    font-size: 4em;
+    font-size: 3.4em;
     font-weight: 300;
   }
   h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 300;
     text-align: center;
   }
@@ -675,3 +715,48 @@ main {
     }
   }
 }
+
+/*
+ .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // background-color: blue;
+      font-family: monospace;
+      gap: 3em;
+      font-size: 1.2em;
+      ul {
+        list-style-type: none;
+        opacity: 0.8;
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8em;
+        .btn {
+          background-color: #111111;
+          color: white;
+          padding: 0.8em 1.3em;
+          outline: none;
+          border-radius: 1.2em;
+          font-family: monospace;
+          font-weight: 300;
+          font-size: 0.8em;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 1.5em;
+      li {
+        font-size: 1.2em;
+        font-weight: 300;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+*/
